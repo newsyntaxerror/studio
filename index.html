@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>studio — 달콩 앱 모음</title>
+<meta name="theme-color" content="#08080a">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 28px 20px calc(28px + env(safe-area-inset-bottom));
+    background: radial-gradient(120% 80% at 50% 0%, #1a0f18 0%, #08080a 55%, #08080a 100%);
+    color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: 100%; max-width: 420px; }
+  h1 { margin: 0 0 6px; font-size: 22px; letter-spacing: -.02em; }
+  p.sub { margin: 0 0 22px; color: #8b8794; font-size: 13px; }
+  a.app {
+    display: block; text-decoration: none; color: inherit;
+    background: #121216; border: 1px solid #24242c; border-radius: 18px;
+    padding: 16px 18px; margin-bottom: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  a.app:active { background: #17171d; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .name { font-size: 16px; font-weight: 700; }
+  .desc { margin-top: 6px; font-size: 12.5px; line-height: 1.5; color: #9a96a4; }
+  .tag { font-size: 11px; font-weight: 700; color: #ff2a85; border: 1px solid rgba(255,42,133,.45); border-radius: 999px; padding: 3px 8px; white-space: nowrap; }
+  footer { margin-top: 20px; font-size: 11px; color: #5d5a66; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>studio</h1>
+    <p class="sub">달콩 앱 모음 · GitHub Pages</p>
+
+    <a class="app" href="./remix/">
+      <div class="row">
+        <span class="name">다인이 리믹스 스튜디오</span>
+        <span class="tag">v1.2</span>
+      </div>
+      <div class="desc">아기 영상의 목소리를 자동으로 찾아 비트에 맞춰 컷 편집·리믹스하고, 720p 영상으로 저장하는 PWA.</div>
+    </a>
+
+    <footer>서버 없이 브라우저 안에서만 동작합니다.</footer>
+  </div>
+</body>
+</html>
